@@ -1,0 +1,48 @@
+/*!
+Theme Name: Accu Fleet 1.0
+Theme URI: https://cyberizegroup.com/
+Author: The CyberizeGroup
+Author URI: https://cyberizegroup.com/
+Description: A Full Custom Mega Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: gulf-coast
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+html {
+	/* display: none; */
+}
+
+.blog .blog-index-block-garage .entry-title a {
+	text-transform: uppercase;
+}
+
+.blog.logged-in {
+	margin-top: -40px !important;
+}
+
+.page-id-5607.logged-in {
+	margin-top: -40px !important;
+}
+
+.page-id-5609.logged-in {
+	margin-top: -40px !important;
+}
+
+.page-id-5617.logged-in {
+	margin-top: -40px !important;
+}
+
+.page-id-6361.logged-in {
+	margin-top: -40px !important;
+}
+
+.single-post.logged-in {
+	margin-top: -40px !important;
+}

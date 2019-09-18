@@ -1,0 +1,199 @@
+/**
+ *
+ * Footer accufleet
+ *
+ */
+
+#footer-accufleet {
+
+	width: 100vw;
+	background-color: $white;
+	text-align: center;
+
+	.widgets_wrapper {
+		padding-top: 5rem;
+
+		.footer-text {
+			font-size: 1rem !important;
+			font-family: $secondary-font;
+			font-weight: 300;
+			color: white !important;
+			padding-bottom: .8rem;
+			list-style-type: none;
+
+			a {
+				color: white;
+			}
+		}
+
+
+		#search-3 {
+			margin-top: -3rem;
+			.search-submit {
+				display: none;
+			}
+		}
+
+		.widget {
+			padding-bottom: 2rem;
+			color: lighten($cg-secondary, 20%);
+
+			p {
+				color: lighten($cg-secondary, 20%);
+			}
+
+			h1,h2,h3,h4,h5 {
+				font-family: $secondary-font;
+				color: white;
+			}
+			h1 {
+				font-size: $font-size-base * 2.5;
+			}
+			h2 {
+				font-size: $font-size-base * 2;
+			}
+			h3 {
+				font-size: $font-size-base * 1.75;
+			}
+			h4 {
+				font-size: $font-size-base * 1.5;
+			}
+			h5 {
+				font-size: $font-size-base * 1.25;
+			}
+			ul {
+				padding-inline-start: 0px;
+			}
+		}
+	}
+
+	.copyright {
+		// color: white;
+		// padding: 1rem;
+		display: inline-block;
+		// height: 8vh;
+		padding-bottom: 15px;
+		padding-top: 15px;
+
+		.copy-right-text {
+
+			font-size: 1.3rem;
+			font-weight: normal;
+			font-family: Montserrat;
+
+			@media (max-width: 765px) {
+
+				font-size: 1rem !important;
+			}
+		}
+
+		a {
+			color: #e3e3e3;
+		}
+	}
+
+	.gc-social-icons-inline {
+
+		ul {
+
+			list-style-type: none;
+			padding: 0px;
+
+			li {
+
+				display: inline-block;
+				padding-right: 15px;
+
+				&:last-child {
+
+					padding-right: 0px;
+				}
+			}
+		}
+	}
+
+	.ac-footer-bottom {
+
+		border-top: 1px solid #707070;
+
+		.ac-site-logo-bottom {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		.bottom-container {
+			background-color: $secondary;
+			text-align: center;
+			color: $white;
+			padding-top: 30px;
+    		padding-bottom: 30px;
+
+			.footer-sidebar-menu {
+
+				ul {
+					margin-bottom: 0px;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+
+					&.menu {
+
+						@media (max-width: 600px) {
+
+							flex-direction: column;
+						}
+
+						li {
+
+							@media (max-width: 600px) {
+
+								flex-direction: column;
+							}
+						}
+					}
+				}
+
+				.menu-item {
+
+					display: flex;
+					flex-direction: row;
+
+					&::before {
+
+						content: '';
+					}
+
+					a {
+						color: $white;
+
+						@media (max-width: 765px) {
+
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			.gc-social-icons-inline {
+
+				margin-top: 15px;
+
+				li {
+
+					a {
+
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+	.ac-footer-below {
+
+		background-color: $primary;
+		text-align: center;
+		color: $white;
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,142 @@
+/**
+ *
+ * STYLE: Single Blog Post Accufleet
+ *
+ */
+
+.post-accufleet {
+	// padding-bottom: 5rem;
+	// border: 1rem solid pink;
+
+
+
+	.container {
+		padding: 3rem;
+		margin-top: 0rem;
+
+		@media (max-width: 400px) {
+			padding: 1.8rem !important;
+		}
+	}
+
+	.blog-index-title {
+		// border: 1rem solid hotpink;
+		margin-bottom: -.25rem;
+		padding: .5rem 0rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: white;
+		background: $cg-primary;
+		text-transform: uppercase;
+	}
+	.long-underline {
+		width: 100%;
+		border-top: 4px solid $cg-primary;
+		margin-bottom: 2rem;
+	}
+
+	.entry-content {
+
+		.featured-img-holder {
+
+			.post-thumbnail {
+
+				img {
+					margin-top: 0rem;
+					padding-top: 0rem;
+					width: 100%;
+				}
+			}
+		}
+
+		p {
+
+			word-break: break-word;
+		}
+
+		.entry-title {
+			font-family: $primary-font;
+			color: $cg-text;
+			// padding-top: 3rem;
+			word-break: break-word;
+		}
+		.entry-meta {
+
+			padding-right: 2rem;
+			padding-top: 15px;
+			padding-bottom: 30px;
+			margin-bottom: 0rem !important;
+
+			@media (max-width: 449px) {
+				display: flex;
+				flex-direction: column;
+			}
+
+			span {
+
+				&.posted-on {
+
+
+
+					&:before {
+
+						content: '';
+					}
+
+					@media (max-width: 512px) {
+						padding-left: 15px !important;
+					}
+
+					@media (max-width: 449px) {
+
+						padding-left:0px !important;
+						display: flex;
+    					flex-direction: column;
+					}
+				}
+			}
+
+
+
+			.post-categories {
+
+				list-style-type: none;
+				padding: 0px;
+				float: right;
+				font-size: 13px;
+				padding-right: 25vw;
+
+				@media (min-width: 1480px) {
+
+					padding-right: 17vw;
+				}
+
+				@media (max-width: 600px) {
+
+					padding-right: 13vw;
+				}
+
+				@media (max-width: 449px) {
+
+					padding-right:0vw;
+				}
+
+				a {
+					color: $black;
+
+					&:hover {
+						color: $cg-button;
+					}
+				}
+			}
+
+ 			.byline {
+ 				text-transform: capitalize;
+ 			}
+ 			.cat-links {
+ 				// border: 1px solid red;
+ 				color: lighten($cg-secondary, 0%);
+ 			}
+		}
+	}
+}

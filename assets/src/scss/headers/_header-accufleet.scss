@@ -1,0 +1,138 @@
+/**
+ *
+ * Header accufleet Styles
+ *
+ */
+
+#header-accufleet {
+
+	.navbar {
+		background: $white;
+		height: 100px;
+		box-shadow: 1px 1px 6px #000;
+
+		.navbar-brand {
+			.logo {
+				// width: 70%;
+
+				@media (max-width: 1199px) {
+					width: 46%;
+				}
+
+				@media (max-width: 568px) {
+					width: 60%;
+				}
+
+				@media (max-width: 460px) {
+					width: 60%;
+				}
+			}
+		}
+		.navbar-toggler {
+			border: 3px solid lighten($cg-primary, 20%);
+
+			.navbar-toggler-icon {
+				background-image: url('/wp-content/uploads/2018/02/new-nav-icon-40.png');
+			}
+		}
+		#navbar-content {
+
+			#primary-menu {
+
+				padding-left: 2rem;
+				// margin-bottom: -2rem;
+
+
+				.menu-item {
+
+					padding-right: 2rem;
+
+					&.active {
+
+						a {
+
+							font-weight: 700;
+						}
+					}
+
+					&.menu-item-has-children {
+
+						> a {
+
+							&::after {
+								font-family: 'FontAwesome';
+								content: "\f107";
+								color: #333333;
+    							font-size: 16px;
+								border-top: .0em solid;
+								position: absolute;
+								top: 5px;
+							}
+						}
+					}
+
+					a {
+						font-family: $primary-font;
+						font-size: .8rem;
+						font-weight: 500;
+						color: $black !important;
+						text-transform: uppercase;
+						color: lighten($cg-secondary, 10%);
+						white-space: pre;
+
+						&:hover {
+							color: lighten($cg-secondary, 20%);
+						}
+					}
+
+					&:last-child {
+
+						background-color: $cg-button;
+						padding-right: 0rem !important;
+
+						a {
+
+							text-align: center;
+							color: #fff !important;
+							text-transform: none;
+							padding-left: 20px;
+							padding-right: 20px;
+						}
+					}
+
+					.dropdown-menu {
+
+						transform: translate(-67px, 10px);
+	    				border-radius: 0px;
+						box-shadow: 0px 1px 6px #888;
+						// max-width: 300px;
+						min-width: 236px;
+						padding: 15px;
+
+						> a {
+
+							font-weight: 600;
+							color: $primary !important;
+							padding: 15px;
+							white-space: pre-line;
+							font-family: Montserrat !important;
+							background-color: transparent !important;
+
+							&.dropdown-item.active {
+
+								background-color: transparent !important;
+							}
+						}
+					}
+				}
+				.current-menu-item {
+					a {
+						font-family: $secondary-font;
+						color: $cg-link !important;
+					}
+				}
+
+			}
+		}
+	}
+}
